@@ -166,6 +166,10 @@ cur5.close()
 df['admin_email'] = df['admin_email'].astype(str)
 df['admin_email'] = df['admin_email'].str[2:-3]
 
+#get clean theme name
+df['theme'] = df['theme'].astype(str)
+df['theme'] = df['theme'].str[2:-3]
+
 #create NetID column
 df['NetID'] = df['admin_email'].str[:-8]
 
