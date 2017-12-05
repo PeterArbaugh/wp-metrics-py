@@ -151,6 +151,16 @@ def getJetpack(tname):
 df['jetpack_raw'] = df.apply(lambda row: getJetpack(row[0]), axis=1)
 cur4.close()
 
+#step 5: get theme info
+cur5 = cnx.cursor()
+def getTheme(tname):
+    query5 = ("SELECT option_value FROM %s WHERE option_name='stylesheet'") % tname
+    cur5.execute(query5)
+    return cur5.fetchone()
+
+df['theme'] = df.apply(lambda row: getTheme(row[0]), axis=1)
+cur5.close()
+
 #data cleaning
 #get clean admin email
 df['admin_email'] = df['admin_email'].astype(str)
