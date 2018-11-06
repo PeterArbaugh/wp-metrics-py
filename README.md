@@ -10,5 +10,9 @@ This is a simple script for data wrangling and can be used to compare data from 
 
 The WordPress multisite database is a pain to pull metrics from.  While there are a few tables which pull all the different sites together (such as `wp_blogs`), most information about each site is stored on a series of site specific tables.  To get information about plugin usage on NYU Web Publishing directly from the database, I wrote this script to cycle through relelvant options tables, pull information from each one, and join to `wp_blogs` for data analysis and visualization.
 
-This script has been replaced by a more complex process which can give us more complex data on a regular basis.
+This script has been replaced by a new process which can give us more complete data on a regular basis.
+
+## AY 2018 Report - Public
+
+This is the code used to produce metrics and visualizations for the yearly Web Publishing Product report.  No dataframes are visualized in this report for reasons of privacy.
 
