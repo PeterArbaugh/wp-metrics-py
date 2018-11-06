@@ -16,3 +16,6 @@ This script has been replaced by a new process which can give us more complete d
 
 This is the code used to produce metrics and visualizations for the yearly Web Publishing Product report.  No dataframes are visualized in this report for reasons of privacy.
 
+## Inaccessible site count
+
+A notebook to pull basic numbers about inaccessible sites in the system.  Recycles a lot of code used in the AY2018 Report.
