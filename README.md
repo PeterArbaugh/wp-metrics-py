@@ -19,3 +19,7 @@ This is the code used to produce metrics and visualizations for the yearly Web P
 ## Inaccessible site count
 
 A notebook to pull basic numbers about inaccessible sites in the system.  Recycles a lot of code used in the AY2018 Report.
+
+## Plugins mail merge
+
+A sample script to build list of plugins activated (on some site) by a given site owner.  Built for input into Lyris. This was complicated by the fact that users have varying numbers of plugins they need to be aware of.
